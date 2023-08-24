@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "eventmodeling"
+version = "0.1.0"
+description = ""
+authors = []
+packages = [{include = "eventmodeling"}]
+
+[build-system]
+requires = ["poetry-core==1.6.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools]
+packages = ["eventmodeling"]
+
+[tool.poetry.scripts]
+eventmodeling-cli = "eventmodeling.cli:main"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+langchain = { version = "0.0.238", extras = [] }
+openai = "0.27.8"
