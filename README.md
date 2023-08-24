@@ -1,1 +1,1 @@
-# eventmodeling-toolkit
+# Event Modeling Toolkit
