@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: The JSON-Schema definition for the event payload.
+type: object
+properties:
+  id:
+    type: string
+    description: The schema ID of the event. Meant to be used to identify the schema of the event.
+    "pattern": "^[a-z][a-z0-9_.]*$",
+  name:
+    type: string
+    description: Human readable name of the event.
+  traits:
+    type: object
+    description: The traits of the event.
+    additionalProperties: true
+  metadata:
+    type: object
+    description: The metadata of the event.
+    additionalProperties: true
