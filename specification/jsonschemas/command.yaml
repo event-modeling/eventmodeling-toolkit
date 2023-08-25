@@ -2,6 +2,9 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: The JSON-Schema definition for the command payload.
 type: object
 properties:
+  schemaVersion:
+    type: string
+    description: The schema version of the event. Meant to be used to identify the schema version of the event.
   id:
     type: string
     description: The schema ID of the command. Meant to be used to identify the schema of the command.
